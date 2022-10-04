@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -19,57 +18,57 @@ const Navbar = () => {
           <span></span>
         </div>
       </div>
-      <nav className="navbar hidden md:block md:fixed md:w-full">
+      <nav className="navbar hidden md:block md:fixed md:w-full z-10">
         <ul className="fa-ul flex items-center justify-center my-4">
           <li className="mb-4 mx-4 uppercase">
-            <Link
+            <a
               className="text-white text-xl mb-8"
-              to={"/"}
+              href={"#home"}
               onClick={() => setNavOpen(false)}
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none" }}a
             >
               Home
-            </Link>
+            </a>
           </li>
           <li className="mb-4 mx-4 uppercase">
-            <Link
+            <a
               className="text-white text-xl mb-8"
-              to={"/about-us"}
+              href={"#about-us"}
               onClick={() => setNavOpen(false)}
               style={{ textDecoration: "none" }}
             >
               About Us
-            </Link>
+            </a>
           </li>
           <li className="mb-4 mx-4 uppercase">
-            <Link
+            <a
               className="text-white text-xl mb-8"
-              to={"/clients"}
+              href={"#services"}
               onClick={() => setNavOpen(false)}
               style={{ textDecoration: "none" }}
             >
-              Clients
-            </Link>
+              Services
+            </a>
           </li>
           <li className="mb-4 mx-4 uppercase">
-            <Link
+            <a
               className="text-white text-xl mb-8"
-              to={"/testimonials"}
+              href={"#testimonials"}
               onClick={() => setNavOpen(false)}
               style={{ textDecoration: "none" }}
             >
               Testimonials
-            </Link>
+            </a>
           </li>
           <li className="mb-4 mx-4 uppercase">
-            <Link
+            <a
               className="text-white text-xl mb-8"
-              to={"/contact"}
+              href={"#contact"}
               onClick={() => setNavOpen(false)}
               style={{ textDecoration: "none" }}
             >
               Contact Us
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
@@ -77,54 +76,54 @@ const Navbar = () => {
         <div className={`wrapper flex items-center justify-center ${navOpen ? "active" : ""}`}>
           <ul className="fa-ul">
             <li className="mb-4">
-              <Link
+              <a
                 className="text-white text-5xl mb-8"
-                to={"/"}
+                href={"#home"}
                 onClick={() => setNavOpen(false)}
                 style={{ textDecoration: "none" }}
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li className="mb-4">
-              <Link
+              <a
                 className="text-white text-5xl mb-8"
-                to={"/about-us"}
+                href={"#about-us"}
                 onClick={() => setNavOpen(false)}
                 style={{ textDecoration: "none" }}
               >
                 About Us
-              </Link>
+              </a>
             </li>
             <li className="mb-4">
-              <Link
+              <a
                 className="text-white text-5xl mb-8"
-                to={"/clients"}
+                href={"#services"}
                 onClick={() => setNavOpen(false)}
                 style={{ textDecoration: "none" }}
               >
-                Clients
-              </Link>
+                Services
+              </a>
             </li>
             <li className="mb-4">
-              <Link
+              <a
                 className="text-white text-5xl mb-8"
-                to={"/testimonials"}
+                href={"#testimonials"}
                 onClick={() => setNavOpen(false)}
                 style={{ textDecoration: "none" }}
               >
                 Testimonials
-              </Link>
+              </a>
             </li>
             <li className="mb-4">
-              <Link
+              <a
                 className="text-white text-5xl mb-8"
-                to={"/contact"}
+                href={"#contact"}
                 onClick={() => setNavOpen(false)}
                 style={{ textDecoration: "none" }}
               >
                 Contact Us
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

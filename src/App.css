@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: rgb(9, 7, 7);
+  font-family: 'Raleway', sans-serif;
 }
