@@ -98,7 +98,7 @@ const Aboutus = () => {
       <div className="flex flex-col items-center justify-center mt-8 md:my-28">
         <h1 className="mb-4 text-center text-2xl md:text-6xl">Entertainment PR</h1>
         <div className="flex flex-col md:flex-row w-full md:my-8">
-          <img src={ent2} className="h-[300px] w-auto p-2 md:h-[500px] md:w-5/12" alt="ent1" />
+          <img src={ent2} className="h-[400px] w-auto p-2 md:h-[500px] md:w-5/12" alt="ent1" />
           <p className="p-4 md:pb-0 md:pr-0 md:pl-12 md:pt-12 md:text-xl">
             We strive to help brands, personalities and projects to grow through
             building influence in the traditional, broadcast, print and online
